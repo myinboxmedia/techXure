@@ -1,12 +1,4 @@
 
-/*
-Template Name: Snacked Admin
-Author: codervent
-Email: codervent@gmail.com
-File: style.css
-*/
-
-
 /* 
 - General
 - Header
@@ -507,7 +499,7 @@ a {
 
 .sidebar-wrapper .metismenu ul a {
 	padding: 6px 15px 6px 15px;
-	font-size: 15px;
+	font-size: 13px;
 	border: 0;
 	border-left: 4px solid rgb(255 255 255 / 0%);
 }
