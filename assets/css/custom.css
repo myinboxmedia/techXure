@@ -1,0 +1,7 @@
+.sidebar-wrapper .metismenu a .parent-icon {
+    font-size: 27px;
+    line-height: 1;
+}
+.sidebar-wrapper .metismenu>li {
+  border-bottom: 1px solid #e8e8e8;
+}
