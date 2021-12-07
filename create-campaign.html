@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en" class="light-theme">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+  <!--plugins-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+  <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  
+
+  <link rel="stylesheet" href="icons/icomoon/style.css">
+
+  <!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+
+  <!--Theme Styles-->
+  <link href="assets/css/dark-theme.css" rel="stylesheet" />
+  <link href="assets/css/light-theme.css" rel="stylesheet" />
+  <link href="assets/css/semi-dark.css" rel="stylesheet" />
+  <link href="assets/css/header-colors.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <title>Create Campaign- TechXsure</title>
+
+  <style>
+    .form-floating>.form-control {
+        padding: 0.75rem 0.75rem;
+    }
+    .form-floating>label {padding: 0.75rem 0.75rem;}
+    .form-floating>.form-control, .form-floating>.form-select {
+      height: calc(2.5rem + 2px);
+      line-height: 0.25;
+    }
+    .form-floating>.form-select {
+    /* padding-top: 1.625rem; */
+    /* padding-bottom: 0.625rem; */
+        padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+        line-height: 42px !important;
+        font-size: 12px;
+    }
+    .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    opacity: 1;
+    transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
+    color: #3461ff;
+}
+  </style>
+
+</head>
+
+<body>
+
+
+  <!--start wrapper-->
+  <div class="wrapper">
+    <!--start top header-->
+      <header class="top-header">        
+        <nav class="navbar navbar-expand gap-3">
+          <div class="mobile-toggle-icon fs-3">
+              <i class="bi bi-list"></i>
+            </div>
+            <form class="searchbar">
+                <div class="position-absolute top-50 translate-middle-y search-icon ms-3"><i class="bi bi-search"></i></div>
+                <input class="form-control" type="text" placeholder="Type here to search">
+                <div class="position-absolute top-50 translate-middle-y search-close-icon"><i class="bi bi-x-lg"></i></div>
+            </form>
+            <div class="top-navbar-right ms-auto">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item search-toggle-icon">
+                  <a class="nav-link" href="#">
+                    <div class="">
+                      <i class="bi bi-search"></i>
+                    </div>
+                  </a>
+              </li>
+              <li class="nav-item dropdown dropdown-user-setting">
+                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown">
+                  <div class="user-setting d-flex align-items-center">
+                    <img src="assets/images/avatars/avatar-1.png" class="user-img" alt="">
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                     <a class="dropdown-item" href="#">
+                       <div class="d-flex align-items-center">
+                          <img src="assets/images/avatars/avatar-1.png" alt="" class="rounded-circle" width="54" height="54">
+                          <div class="ms-3">
+                            <h6 class="mb-0 dropdown-user-name">Jhon Deo</h6>
+                            <small class="mb-0 dropdown-user-designation text-secondary">HR Manager</small>
+                          </div>
+                       </div>
+                     </a>
+                   </li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li>
+                      <a class="dropdown-item" href="#">
+                         <div class="d-flex align-items-center">
+                           <div class=""><i class="bi bi-person-fill"></i></div>
+                           <div class="ms-3"><span>Profile</span></div>
+                         </div>
+                       </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                         <div class="d-flex align-items-center">
+                           <div class=""><i class="bi bi-gear-fill"></i></div>
+                           <div class="ms-3"><span>Setting</span></div>
+                         </div>
+                       </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                         <div class="d-flex align-items-center">
+                           <div class=""><i class="bi bi-speedometer"></i></div>
+                           <div class="ms-3"><span>Dashboard</span></div>
+                         </div>
+                       </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                         <div class="d-flex align-items-center">
+                           <div class=""><i class="bi bi-piggy-bank-fill"></i></div>
+                           <div class="ms-3"><span>Earnings</span></div>
+                         </div>
+                       </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                         <div class="d-flex align-items-center">
+                           <div class=""><i class="bi bi-cloud-arrow-down-fill"></i></div>
+                           <div class="ms-3"><span>Downloads</span></div>
+                         </div>
+                       </a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                         <div class="d-flex align-items-center">
+                           <div class=""><i class="bi bi-lock-fill"></i></div>
+                           <div class="ms-3"><span>Logout</span></div>
+                         </div>
+                       </a>
+                    </li>
+                </ul>
+              </li>
+              </ul>
+              </div>
+        </nav>
+      </header>
+       <!--end top header-->
+
+        <!--start sidebar -->
+        <aside class="sidebar-wrapper" data-simplebar="true">
+          <div class="sidebar-header">
+            <div>
+              <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+            </div>
+            <div>
+              <h4 class="logo-text">TechXure</h4>
+            </div>
+            <div class="toggle-icon ms-auto"> <i class="bi bi-list"></i>
+            </div>
+          </div>
+          <!--navigation-->
+          <ul class="metismenu" id="menu">
+            
+            <!--  -->
+            <li>
+              <a class="has-arrow" href="javascript:;">
+                <div class="parent-icon"><i class="bi bi-chat-right-text"></i></div>
+                <div class="menu-title">SMS</div>
+              </a>
+              <ul>
+                <!--  -->
+                <li> <a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>Easy SMPP</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Operator A/C Onboarding</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Client A/C Creation</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>SMS Template Mapping</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Route Setting</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Traffic Monitoring</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>DLR Resend</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Client A/C Recharge</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>General Settings</a></li>
+                  </ul>
+                </li>
+                <!--  -->
+                <li> <a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>SMS API</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Operator A/C Mapping</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>General Setting</a></li>
+                  </ul>
+                </li>
+                <!--  -->
+                <li> <a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>DLR & Analytics</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>SMS Report</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>SMS Summary</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>DLR Download</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Click Report</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Rich Media Click Report</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Campaign Report</a></li>
+                  </ul>
+                </li>
+                <!--  -->
+              </ul>
+            </li>
+            <!--  -->
+            <li>
+              <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="bi bi-megaphone"></i>
+                </div>
+                <div class="menu-title">Campaign Management</div>
+              </a>
+              <ul>
+                <li> <a href="create-campaign.html"><i class="bi bi-circle"></i>Create Campaign</a></li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Schedule Campaign</a></li>
+                <li> <a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>Requests</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Add Sender ID</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Add Templates</a></li>
+                  </ul>
+                </li>
+                <li> <a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>Phone Book</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Add Group</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Add Phone Numbers</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!--  -->
+            <li>
+              <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="lni lni-headphone-alt"></i>
+                </div>
+                <div class="menu-title">Voice</div>
+              </a>
+              <ul>
+                <!--  -->
+                <li><a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>OBD Calls</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Voice File Upload</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>IVR Tree Creation</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>OBD Campaign</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>General Settings</a></li>
+                  </ul>
+                </li>
+                <!--  -->
+                <li><a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>Text to Speech</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Voice File Creation</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>IVR Tree Creation</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Create Campaign</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>General Settings</a></li>
+                  </ul>
+                </li>
+                 <!--  -->
+                 <li><a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>Analytics</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>OBD Call Reports</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Campaign Analysis</a></li>
+                  </ul>
+                </li>
+                <!--  -->
+              </ul>
+            </li>
+            <!--  -->
+            <li>
+              <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="lni lni-whatsapp"></i>
+                </div>
+                <div class="menu-title">WhatsApp</div>
+              </a>
+              <ul>
+                <li> <a href="#"><i class="bi bi-circle"></i>WABA</a>
+                </li>
+                <li> <a href="#"><i class="bi bi-circle"></i>WhatsApp Chat Bot</a>
+                </li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Analytics</a>
+                </li>
+              </ul>
+            </li>
+            <!--  -->
+            <li>
+              <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="bi bi-envelope-check"></i>
+                </div>
+                <div class="menu-title">Email</div>
+              </a>
+              <ul>
+                <li> <a href="#"><i class="bi bi-circle"></i>SMTP Relay Settings</a>
+                </li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Mailer</a>
+                </li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Analytics</a>
+                </li>
+              </ul>
+            </li>
+            <!--  -->
+            <li>
+              <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="bi bi-person-square"></i>
+                </div>
+                <div class="menu-title">Account Management</div>
+              </a>
+              <ul>
+                <li> <a href="#"><i class="bi bi-circle"></i>Create Account</a></li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Account List</a></li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Rate & Balance Management</a></li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Block / Unblock A/C</a></li>
+                <!--  -->
+                <li> <a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>Sender ID</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Allot Sender ID</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Approve Sender ID</a></li>
+                  </ul>
+                </li>
+                <!--  -->
+                <li> <a class="has-arrow" href="javascript:;"><i class="bi bi-circle"></i>Templates</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Add Templates</a></li>
+                    <li><a href="javascript:;"><i class="bi bi-check-circle-fill"></i>Approve Templates</a></li>
+                  </ul>
+                </li>
+                <!--  -->
+                <li> <a href="#"><i class="bi bi-circle"></i>Cr / Dr Logs</a></li>
+              </ul>
+            </li>
+            <!--  -->
+            <li>
+              <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="bi bi-diagram-3"></i>
+                </div>
+                <div class="menu-title">User Management</div>
+              </a>
+              <ul>
+                <li> <a href="#"><i class="bi bi-circle"></i>User Creation</a></li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Assign Rights</a></li>
+              </ul>
+            </li>
+            <!--  -->
+            <li>
+              <a href="javascript:;" class="has-arrow">
+                <div class="parent-icon"><i class="bi bi-columns-gap"></i>
+                </div>
+                <div class="menu-title">Utilities</div>
+              </a>
+              <ul>
+                <li> <a href="#"><i class="bi bi-circle"></i>URL Shortner</a></li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Rich Media</a></li>
+                <li> <a href="#"><i class="bi bi-circle"></i>WhatsApp / SMS Link Creation</a></li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Digital Scratch Card</a>
+                </li>
+                <li> <a href="#"><i class="bi bi-circle"></i>QR Code</a>
+                </li>
+                <li> <a href="#"><i class="bi bi-circle"></i>Hook API</a>
+                </li>
+              </ul>
+            </li>
+            <!--  -->
+          </ul>
+          <!--end navigation-->
+       </aside>
+       <!--end sidebar -->
+
+       <!--start content-->
+          <main class="page-content">
+             <div class="row">
+                <div class="col-lg-12">
+                  <div class="card mb-2">
+                    <div class="card-header fw-bold text-center h5 py-3">
+                      Multi Channel Communication
+                    </div>
+                      <div class="card-body py-2">
+                        <!--  -->
+                          <form action="">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="CampaignName" placeholder="Campaign Name">
+                                    <label for="CampaignName">Campaign Name</label>
+                                  </div>
+                                </div>
+                                <div class="col-lg-3">
+                                  <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Open this select menu</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelect">Mobile Number Columns</label>
+                                  </div>
+                                </div>
+                                <div class="col-lg-3">
+                                  <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Open this select menu</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelect">Data Type Columns</label>
+                                  </div>
+                                </div>
+                                <div class="col-lg-3">
+                                  <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Open this select menu</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelect">Fillter On Data Type</label>
+                                  </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="row justify-content-center align-items-center">
+                              <div class="col-lg-3">
+                                <div class="form-check form-check-inline">
+                                  <label class="form-check-label fw-bold" for="inlineRadio1">Data</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                  <label class="form-check-label" for="inlineRadio1">CSV</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                  <label class="form-check-label" for="inlineRadio2">External</label>
+                                </div>
+                              </div>
+                                <!--  -->
+                                <div class="col-lg-5">
+                                    <!-- <label for="formFileLg" class="form-label">Large file input example</label> -->
+                                    <input class="form-control" id="formFileLg" type="file">
+                                </div>
+                                <!--  -->
+                                <div class="col-lg-4">
+                                  <a href="#"><i class="bi bi-info-circle-fill"></i> Sample File Format</a>
+                                </div>
+                                <!--  -->
+                            </div>
+                            <!--  -->
+                            <div class="row mt-2">
+                              <div class="col-12">
+                                <div class="form-check form-check-inline">
+                                  <!-- <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> -->
+                                  <label class="form-check-label fw-bold" for="inlineCheckbox1">Communication</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  <label class="form-check-label" for="inlineCheckbox1">SMS</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                  <label class="form-check-label" for="inlineCheckbox2">OBD</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                  <label class="form-check-label" for="inlineCheckbox3">WA Push Notification</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                  <label class="form-check-label" for="inlineCheckbox4">All</label>
+                                </div>
+                              </div>
+                              <!--  -->
+                            </div>
+                          </form>
+                        <!--  -->
+                      </div>
+                  </div>
+                </div>
+             </div>
+             <!--  -->
+             <div class="row">
+               <div class="col-lg-6">
+                    <div class="card border-primary">
+                      <div class="card-header bg-primary text-white">
+                        <i class="bi bi-chat-left-dots"></i>&nbsp;SMS Details
+                      </div>
+                      <div class="card-body">
+                       <!--  -->
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="form-floating mb-1">
+                              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <label for="floatingSelect">Select Template For SMS</label>
+                            </div>
+                          </div>
+                          <!--  -->
+                        </div>
+                        <!--  -->
+                        <div class="row justify-content-center align-items-center mb-1">
+                          <div class="col-lg-4">
+                            <h3 class="mb-2 h6">Template Fields</h3>
+                            <select class="form-select" size="4" aria-label="size 3 select example">
+                              <option selected>{#var1#}</option>
+                              <option value="1">{#var2#}</option>
+                              <option value="2">{#var3#}</option>
+                              <option value="3">{#var4#}</option>
+                            </select>
+                          </div>
+                          <!--  -->
+                          <div class="col-lg-4">
+                            <a href="#" class="btn btn-outline-primary d-flex justify-content-center align-items-center"><i class="bi bi-node-plus"></i>&nbsp; Bind</a>
+                          </div>
+                          <!--  -->
+                          <div class="col-lg-4">
+                            <h3 class="mb-2 h6">Filtered Data Fields</h3>
+                            <select class="form-select" size="4" aria-label="size 3 select example">
+                              <option selected>Name</option>
+                              <option value="1">Age</option>
+                              <option value="2">City</option>
+                              <option value="3">Lorem</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="row justify-content-center align-items-center mb-3">
+                          <div class="col-12">
+                            <h3 class="mb-2 mt-1 h6">Mapped Fields</h3>
+                          </div>
+                          <div class="col-lg-8">
+                            <select class="form-select" size="4" aria-label="size 3 select example">
+                              <option selected>{#var1#} -------------------> Name</option>
+                              <option value="1">{#var2#} -------------------> Age</option>
+                              <option value="2">{#var3#} -------------------> City</option>
+                              <option value="3">{#var4#} ------------------->Lorem</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-4">
+                            <a href="#" class="btn btn-outline-primary d-flex justify-content-center align-items-center"><i class="bi bi-node-minus"></i>&nbsp; Un Bind</a>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="row">
+                            <div class="col-12">
+                              <div class="form-floating">
+                                <textarea class="form-control" placeholder="Message Preview" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Message Preview</label>
+                              </div>
+                            </div>
+                        </div>
+                      <!--  -->
+                    </div>
+               </div>
+             </div>
+             <!--  -->
+             <div class="col-lg-6">
+              <div class="card border-primary">
+                <div class="card-header bg-success text-white">
+                  <i class="bi bi-whatsapp"></i>&nbsp;WhatsApp Details
+                </div>
+                <div class="card-body">
+                  <!--  -->
+                       <!--  -->
+                       <div class="row">
+                        <div class="col-12">
+                          <div class="form-floating mb-1">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <label for="floatingSelect">Select Template For SMS</label>
+                          </div>
+                        </div>
+                        <!--  -->
+                      </div>
+                      <!--  -->
+                      <div class="row justify-content-center align-items-center mb-1">
+                        <div class="col-lg-4">
+                          <h3 class="mb-2 h6">Template Fields</h3>
+                          <select class="form-select" size="4" aria-label="size 3 select example">
+                            <option selected>{#var1#}</option>
+                            <option value="1">{#var2#}</option>
+                            <option value="2">{#var3#}</option>
+                            <option value="3">{#var4#}</option>
+                          </select>
+                        </div>
+                        <!--  -->
+                        <div class="col-lg-4">
+                          <a href="#" class="btn btn-outline-primary d-flex justify-content-center align-items-center"><i class="bi bi-node-plus"></i>&nbsp; Bind</a>
+                        </div>
+                        <!--  -->
+                        <div class="col-lg-4">
+                          <h3 class="mb-2 h6">Filtered Data Fields</h3>
+                          <select class="form-select" size="4" aria-label="size 3 select example">
+                            <option selected>Name</option>
+                            <option value="1">Age</option>
+                            <option value="2">City</option>
+                            <option value="3">Lorem</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="row justify-content-center align-items-center mb-3">
+                        <div class="col-12">
+                          <h3 class="mb-2 mt-1 h6">Mapped Fields</h3>
+                        </div>
+                        <div class="col-lg-8">
+                          <select class="form-select" size="4" aria-label="size 3 select example">
+                            <option selected>{#var1#} -------------------> Name</option>
+                            <option value="1">{#var2#} -------------------> Age</option>
+                            <option value="2">{#var3#} -------------------> City</option>
+                            <option value="3">{#var4#} ------------------->Lorem</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-4">
+                          <a href="#" class="btn btn-outline-primary d-flex justify-content-center align-items-center"><i class="bi bi-node-minus"></i>&nbsp; Un Bind</a>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="row">
+                          <div class="col-12">
+                            <div class="form-floating">
+                              <textarea class="form-control" placeholder="Message Preview" id="floatingTextarea2" style="height: 100px"></textarea>
+                              <label for="floatingTextarea2">Message Preview</label>
+                            </div>
+                          </div>
+                      </div>
+                    <!--  -->
+                  <!--  -->
+                </div>
+         </div>
+       </div>
+       <!--  -->
+          </main>
+       <!--end page main-->
+
+       <!--start overlay-->
+        <div class="overlay nav-toggle-icon"></div>
+       <!--end overlay-->
+
+       <!--Start Back To Top Button-->
+		     <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+       <!--End Back To Top Button-->
+
+  </div>
+  <!--end wrapper-->
+
+
+  <!-- Bootstrap bundle JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!--plugins-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+  <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+  <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+  <script src="assets/js/pace.min.js"></script>
+  <script src="assets/plugins/chartjs/js/Chart.min.js"></script>
+  <script src="assets/plugins/chartjs/js/Chart.extension.js"></script>
+  <script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
+  <!--app-->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script>
+    new PerfectScrollbar(".best-product")
+ </script>
+
+
+</body>
+
+</html>
